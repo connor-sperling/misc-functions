@@ -1,12 +1,16 @@
 
 while true
-    clear
-    close all
+    
     
     i = input('\n> ', 's');
-    if strcmp(i, 'exit')
+    if strcmp(i, 'cls')
+        disp('  ')
         break
     end
+    
+    clearvars -except i
+    close all
+    
     
 
     if strcmpi(i,'stay')
